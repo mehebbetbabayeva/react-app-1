@@ -68,7 +68,7 @@ const Table = () => {
       rows= {userData}
       columns={columns}
       pageSize={5}
-      getRowId={(row) =>  row.id }
+      getRowId={(row) =>  row.name + Date.now() }
       rowsPerPageOptions={[5]}
       checkboxSelection
       
