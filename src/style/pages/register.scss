@@ -1,0 +1,16 @@
+.form{
+    height: 100vh;
+    display:flex ;
+    justify-content: center;
+ 
+    .input-content{
+        margin-top: 50px;
+        width: 500px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+}
+.MuiInputBase-root{
+    margin-bottom: 20px;
+}
