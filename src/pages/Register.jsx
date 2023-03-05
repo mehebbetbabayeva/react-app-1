@@ -18,7 +18,7 @@ const Register = () => {
          
         })
     }
-    const {name,surname,username,password,id}=userData
+
    
   
   return (
@@ -30,7 +30,7 @@ const Register = () => {
             <TextField id="surname" label="Surname" variant="outlined" onChange={onHandleChange} name="surname"/>   
             <TextField id="username" label="Username" variant="outlined" onChange={onHandleChange} name="username" />
             <TextField id="password" label="Password" variant="outlined" onChange={onHandleChange} name="password"/>
-            <Button variant="contained" disabled={name==="" || surname===""||username===""|| password.length<8 ? true : false}  onClick={onHandleClick}>Register</Button>
+            <Button variant="contained"  onClick={onHandleClick}>Register</Button>
             </div>
         </div>
 

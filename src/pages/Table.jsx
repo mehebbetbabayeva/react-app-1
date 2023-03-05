@@ -50,7 +50,7 @@ const Table = () => {
  useEffect(() => {
     axios.get(`${BASE_URL}/get-data`).then((res) => {
       setUserData(res.data.data);
-      console.log(res.data)
+      console.log(res.data.data)
     });
   }, []);
 
@@ -68,7 +68,6 @@ const Table = () => {
       rows= {userData}
       columns={columns}
       pageSize={5}
-      getRowId={(row) =>  row.name + Date.now() }
       rowsPerPageOptions={[5]}
       checkboxSelection
       
